@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Deploy Microsoft Office Add-ins from O365 Admin"
+date: 2018-02-04
+---
+
 ## Purpose
 
 Provice a standard method for deploying Microsoft Office Add-ins to native and web apps.
