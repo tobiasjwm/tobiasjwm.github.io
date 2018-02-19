@@ -1,3 +1,4 @@
-theme: jekyll-theme-minimal
-title: Tobias Morrison, MacAdmin
-description: A MacAdmin focusing on great employee experiences via scripting and profiles.
+theme:        jekyll-theme-minimal
+title:        Tobias Morrison
+tagline:      MacAdmin
+description:  An Apple Systems Administrator focusing on great employee experiences via scripting and profiles.
