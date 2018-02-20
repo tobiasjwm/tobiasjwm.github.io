@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Installing ScanSnap Manager with Munki
 excerpt_separator: <!--more-->
 ---
@@ -9,13 +9,13 @@ ScanSnap scanners are extremely popular among my clients. They are fast, efficie
 ## The Problem
 
 With its software distribution strategy, Fujitsu has thrown out the [tenants of good packaging][ten]. If you go to the [installer download page][a] you get a package that assumes that all installations are completed by the user and worse, includes a slew of additional components for their Automatic Online Update (AOU) software which is *only* Automatic in that it prompts the user to go through a painful and confusing process of installing multiple packages with multiple password prompts and DMGs and packages mounting and unmounting in userland. Did I mention that the Update process itself takes forever*?
-<!--more-->
+
 Fujitsu does [offer an installer][b] that does not install the AOU components, but like its big sister, it also assumes you are running the installer manually as a logged in user and breaks as many of the rules of good packaging as possible including running unnecessary commands in *both* preinstall and postinstall scripts, triggering Wizards and popping up show-stopper user prompts using AppleScript (!). Both  installers are just *bad*.
 
 ## The Solution
 
 Repackaging. *sigh*
-
+<!--more-->
 We are going to have to rip this baby apart, modify both the preinstall and postinstall scripts, and then put it all back together and test the hell out of it to see if our assumptions are correct and the installer does not stall or fail to create a usable application.
 
 ## The Process
