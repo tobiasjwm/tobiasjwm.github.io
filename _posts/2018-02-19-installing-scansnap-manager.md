@@ -22,27 +22,31 @@ We are going to have to rip this baby apart, modify both the preinstall and post
 
 To create a package that we can run with Munki, we will be extracting the package from the DMG, unpacking the installer with `pkgutil`, commenting out any commands running in userland then re-packaging so we can import it into Munki.
 
-1. **Get the latest version.** As decribed above, we want to get the ScanSnap Manager installer *without* the AOU package and other dead weight. As of winter 2018, you can find this [installer here][b], which is not where it was last time I found it, so your milage may vary. Scroll to the table at the bottom of the page and click **Download** next to "ScanSnap Manager for Mac  V6.3". The link extracted from the page is not a direct download link. Sorry. :(
+1. **Get the latest version.** As described above, we want to get the ScanSnap Manager installer *without* the AOU package and other dead weight. As of winter 2018, you can find this [installer here][b], which is not where it was last time I found it, so your milage may vary. Scroll to the table at the bottom of the page and click **Download** next to "ScanSnap Manager for Mac  V6.3". The link extracted from the page is not a direct download link. Sorry. :(
 2. **Mount the DMG and extract the package.** Here we will use `pkgutil` to extract the package components so that we can mangle the install scripts. For more on this process, see Armin Briegel's excellent [Packaging for Apple Administrators][c].
 
-
+	```
 	$ hdiutil mount ~/Downloads/MaciX500ManagerV63L50WW1.dmg
 	expected   CRC32 $CE13EEFB
 	/dev/disk2          	Apple_partition_scheme
 	/dev/disk2s1        	Apple_partition_map
 	/dev/disk2s2        	Apple_HFS                      	/Volumes/ScanSnap
 	$ pkgutil --expand /Volumes/ScanSnap/ScanSnap\ Manager.pkg scansnap_edit
-
+	```
 
 3. **Edit the preinstall script.** Now that our package has been freed, we can open the scripts and make our changes.
 
+	```
 	$ bbedit ~/scansnap_edit/scansnapManager.pkg/Scripts/preinstall
+	```
 
-4. **Comment out everything targeting userland and a logged in user.** Here you are on your own as I cannot be held responsible for your modifications. I suggest you find any refernces to "$HOME", "$USER" and "osascript". Since our goal is to make this happen at the login window with no logged in user, none of this will work anyway and will simply stall the installation.
+4. **Comment out everything targeting userland and a logged in user.** Here you are on your own as I cannot be held responsible for your modifications. I suggest you find any references to "$HOME", "$USER" and "osascript". Since our goal is to make this happen at the login window with no logged in user, none of this will work anyway and will simply stall the installation.
 5. **Rinse and repeat.** Save the results of your prolific mangling an do the same for the postinstall script.
 6. **Repackage.** Now that we have butchered the scripts, let's put this back together so that we have a usable installer package. *Note that since we have modified the package, the signing is no longer valid. If we try to run this manually Gatekeeper will be very upset with us. Because we are going to install this with Munki (or your RMM of choice) we don't have to be concerned with this.*
 
+	```
 	$ pkgutil --flatten scansnap_edit/ ScanSnap_Manager-6.3.50.pkg
+	```
 
 7. **Test, test, test.** Your co-workers are not your lab rats. Test your install scenarios to assure it works as expected in all your install scenarios. Again, I recommend [Armin's book][c] for tips on testing installers.
 
