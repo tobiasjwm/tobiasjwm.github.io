@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing ScanSnap Manager with Munki
+title: Build a Deployable ScanSnap Manager Installer
 excerpt_separator: <!--more-->
 ---
 
