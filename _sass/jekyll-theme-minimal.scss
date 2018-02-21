@@ -57,7 +57,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:960px;
   margin:0 auto;
 }
 
@@ -150,6 +150,7 @@ header ul a {
 header ul a:hover, header ul a:focus {
   color:#675C5C;
   font-weight:bold;
+  text-decoration:none;
 }
 
 header ul a:active {
@@ -173,7 +174,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:600px;
   float:right;
   padding-bottom:50px;
 }
