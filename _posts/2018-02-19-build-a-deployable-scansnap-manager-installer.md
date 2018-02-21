@@ -2,6 +2,7 @@
 layout: post
 title: Build a Deployable ScanSnap Manager Installer
 excerpt_separator: <!--more-->
+tags: packaging
 ---
 
 ScanSnap scanners are extremely popular among my clients. They are fast, efficient, and output a high-quality PDF. The ScanSnap Manager application makes it simple for average users to very simply create powerful workflows that include running OCR (Optical Character Recognition), rule-based filing and other type and quality modifications.
@@ -15,7 +16,9 @@ Fujitsu does [offer an installer][b] that does not install the AOU components, b
 ## The Solution
 
 Repackaging. *sigh*
+
 <!--more-->
+
 We are going to have to rip this baby apart, modify both the preinstall and postinstall scripts, and then put it all back together and test the hell out of it to see if our assumptions are correct and the installer does not stall or fail to create a usable application.
 
 ## The Process
