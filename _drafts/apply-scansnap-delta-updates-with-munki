@@ -1,0 +1,13 @@
+---
+layout: post
+title: Apply ScanSnap Delta Updates with Munki
+excerpt_separator: <!--more-->
+tags: packaging munki
+---
+
+In my [last post][a] about building a ScanSnap Manager installer that installs in all contexts, I mentioned that Fujitsu's deployment strategy includes delta updaters.
+
+
+
+
+[a]:{{ site.baseurl }}{% post_url /_posts/2018-02-19-build-a-deployable-scansnap-manager-installer %}
