@@ -15,11 +15,9 @@ Fujitsu does [offer an installer][b] that does not install the AOU components, b
 
 ## The Solution
 
-Repackaging. *sigh*
+Repackaging. *sigh* 
 
-<!--more-->
-
-We are going to have to rip this baby apart, modify both the preinstall and postinstall scripts, and then put it all back together and test the hell out of it to see if our assumptions are correct and the installer does not stall or fail to create a usable application.
+We are going to have to rip this baby apart, modify both the preinstall and postinstall scripts, and then put it all back together and test the hell out of it to see if our assumptions are correct and the installer does not stall or fail to create a usable application.<!--more-->
 
 ## The Process
 
