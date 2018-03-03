@@ -1,5 +1,6 @@
 theme:        jekyll-theme-minimal
 title:        Tobias Morrison
-tagline:      MacAdmin
+tagline:      "#MacAdmin"
 description:  An Apple Systems Administrator focusing on great employee experiences via scripting and profiles.
 paginate:     5
+excerpt_separator: <!--more-->

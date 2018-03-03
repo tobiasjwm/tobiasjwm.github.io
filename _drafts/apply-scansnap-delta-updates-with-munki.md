@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Apply ScanSnap Delta Updates with Munki
-excerpt_separator: <!--more-->
 tags: packaging munki
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: A Munki Conditional to Check for Installed App
-excerpt_separator: <!--more-->
 tags: munki bash luggage
 ---
 We use [Box][a] for file storage and sharing. Box has an excellent file management experience in the browser with the addition of [Box Edit][b] for interacting with native apps like Microsoft Word. But old habits die hard and employees love their Finder and so we have [Box Sync][c] scattered throughout a few offices. But Sync's days are numbered as Box has been running a public beta of their new [Box Drive][d] app which offers a hybrid webdav/[FUSE][e] experience that presents like a local file server connection. 
