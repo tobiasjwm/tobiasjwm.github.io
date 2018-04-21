@@ -40,7 +40,7 @@ Say you want to include a [dockutil script][dus] to customize a user Dock. Write
 
 
 
-[a]:outset link
+[a]:https://github.com/chilcote/outset
 [b]:any about page for Joe. Perhaps a conference page. 
 [osw]:https://github.com/chilcote/outset/wiki/FAQ
 [grp]:https://github.com/chilcote/outset/releases
@@ -48,4 +48,5 @@ Say you want to include a [dockutil script][dus] to customize a user Dock. Write
 [ap]:https://github.com/autopkg/autopkg
 [ghc]:https://github.com/chilcote/outset.git
 [dus]:https://github.com/chilcote/outset/wiki/Dockutil
+[tl]:THE LUGGAGE LINK
 [olc]:https://blog.eriknicolasgomez.com/2015/03/25/outset-luggage-companion/
