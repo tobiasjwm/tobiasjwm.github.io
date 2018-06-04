@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#474f48;
+  color:#4500a0;
   margin:0 0 20px;
 }
 
@@ -35,12 +35,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#970203;
+  color:#4500a0;
   text-decoration:none;
 }
 
 a:hover, a:focus {
-  color:#970203;
+  color:#4500a0;
   /*font-weight: bold;*/
   text-decoration:none;
   background-color: #eee;
@@ -155,7 +155,7 @@ header ul a:hover, header ul a:focus {
 }
 
 header ul a:active {
-  background-color:#f0f0f0;
+  background-color:#400080;
 }
 
 strong {
@@ -171,7 +171,7 @@ header ul li + li + li {
 header ul a strong {
   font-size:14px;
   display:block;
-  color:#474f48;
+  color:#4500a0;
 }
 
 section {
