@@ -1,6 +1,7 @@
 ---
 layout: default
-name: List of Posts
+name: Archive
+order: 2
 ---
 
 <ul>
