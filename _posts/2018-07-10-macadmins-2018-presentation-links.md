@@ -34,3 +34,6 @@ Google Chrome Master Preferences
 
 Google Chrome Mobile Profile  
 [https://www.chromium.org/administrators/configuring-other-preferences]()
+
+Example Projects at Github  
+[https://github.com/tobiasjwm/psu-macadmins-2018]()
