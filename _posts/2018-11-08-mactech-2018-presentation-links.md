@@ -5,7 +5,7 @@ tags: speaking mactech
 ---
 Here are links to the resources I referenced in my talk "Options for Delivering Company Content at Employee Onboarding" at MacTech Conference 2018.
 
-User Content in Microsoft Office Apps
+User Content in Microsoft Office Apps  
 [https://macadmins.software/docs/UserContentIn2016.pdf]()
 
 Google Chrome Master Preferences  
@@ -14,19 +14,19 @@ Google Chrome Master Preferences
 Google Chrome Mobile Profile  
 [https://github.com/nmcspadden/Profiles/blob/master/Chrome-ExtensionPolicy.mobileconfig]()
 
-Login Items
+Login Items  
 [https://github.com/rtrouton/profiles/blob/master/OpenSafariAtLogin/]()
 
 docklib  
 [https://github.com/homebysix/docklib]()
 
-desktoppr
+desktoppr  
 [https://github.com/scriptingosx/desktoppr]()
 
 outset  
 [https://github.com/chilcote/outset/]()
 
-bootstrappr
+bootstrappr  
 [https://github.com/munki/bootstrappr]()
 
 "Packaging for Apple Administrators" by Armin Briegel  
