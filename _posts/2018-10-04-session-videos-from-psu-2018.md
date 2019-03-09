@@ -5,7 +5,7 @@ youtubeId: I-J5ty7SQls
 tags: speaking psu
 ---
 
-All the great sessions from MacAdmins Conference at Penn State have been posted at the [resources][1] page including my talk Automating a Great On-boarding Experience. You can grabe the slides [here][2] which includes a wealth of wonderful photography by my [wife, Allie][3].
+All the great sessions from MacAdmins Conference at Penn State have been posted at the [resources][1] page including my talk **Automating a Great On-boarding Experience**. You can grab the slides [here][2] which includes a wealth of wonderful photography by my [wife, Allie][3].
 
 {% include youtubePlayer.html id=page.youtubeId %}
 
